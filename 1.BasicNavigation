@@ -1,0 +1,29 @@
+# Understanding Mode
+1. Normal Mode
+2. Insert Mode (press i - to enter, press ESC - to exit)
+
+# Basic Cursor Movements
+h: Move left
+j: Move down
+k: Move up
+l: Move right
+
+# Using Numeric Multipliers
+5j: Move 5 lines down
+5k: Move 5 line up
+
+# Word and Paragraph Navigation
+To move forward one word, press w
+To move backward one word, press b
+To move to the beginning of the next paragraph, press }
+To move to the begining of the previous paragraph, press }
+
+# Searching fo Text
+To search for a word, simply type / followed by the word you want to find.
+For example, /wordtofind. Press n to go to the next occurrence. Press N to go to the previous occurrence.
+
+# Exiting Vim
+:wq - to save and exit
+:w - save
+:q - exit
+:q! - exit without saving

@@ -1,0 +1,4 @@
+# Database Configuration
+port: 5432
+max_connection: 100
+log_level: debug

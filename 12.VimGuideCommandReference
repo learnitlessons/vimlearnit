@@ -1,0 +1,192 @@
+# Vim Command Reference Guide
+
+
+
+## Basic Navigation
+
+
+
+- `h` - Move cursor left
+
+- `j` - Move cursor down
+
+- `k` - Move cursor up
+
+- `l` - Move cursor right
+
+- `w` - Move to the beginning of the next word
+
+- `b` - Move to the beginning of the previous word
+
+- `e` - Move to the end of the current word
+
+- `gg` - Go to the first line of the document
+
+- `G` - Go to the last line of the document
+
+- `0` - Move to the beginning of the current line
+
+- `$` - Move to the end of the current line
+
+- `:n` - Go to line n (e.g., `:5` goes to line 5)
+
+
+
+## Editing
+
+
+
+- `i` - Enter insert mode before the cursor
+
+- `a` - Enter insert mode after the cursor
+
+- `I` - Enter insert mode at the beginning of the line
+
+- `A` - Enter insert mode at the end of the line
+
+- `o` - Open a new line below the current line and enter insert mode
+
+- `O` - Open a new line above the current line and enter insert mode
+
+- `r` - Replace a single character
+
+- `R` - Enter replace mode
+
+- `x` - Delete character under the cursor
+
+- `X` - Delete character before the cursor
+
+- `dd` - Delete (cut) the current line
+
+- `yy` - Yank (copy) the current line
+
+- `p` - Paste after the cursor
+
+- `P` - Paste before the cursor
+
+- `u` - Undo the last change
+
+- `Ctrl + r` - Redo the last undone change
+
+
+
+## Visual Mode
+
+
+
+- `v` - Enter visual mode (character-wise)
+
+- `V` - Enter visual line mode
+
+- `Ctrl + v` - Enter visual block mode
+
+- `>` - Indent selected text
+
+- `<` - Unindent selected text
+
+
+
+## Search and Replace
+
+
+
+- `/pattern` - Search forward for pattern
+
+- `?pattern` - Search backward for pattern
+
+- `n` - Repeat search in same direction
+
+- `N` - Repeat search in opposite direction
+
+- `:%s/old/new/g` - Replace all occurrences of 'old' with 'new' throughout the file
+
+- `:%s/old/new/gc` - Replace all occurrences with confirmation
+
+
+
+## File Operations
+
+
+
+- `:w` - Save changes
+
+- `:w filename` - Save as a new file
+
+- `:q` - Quit (fails if unsaved changes)
+
+- `:q!` - Quit and discard unsaved changes
+
+- `:wq` or `ZZ` or `x` - Save and quit
+
+- `:e filename` - Edit a file in a new buffer
+
+
+
+## Window Management
+
+
+
+- `:sp filename` - Open a file in a new horizontal split
+
+- `:vsp filename` - Open a file in a new vertical split
+
+- `Ctrl + w s` - Split window horizontally
+
+- `Ctrl + w v` - Split window vertically
+
+- `Ctrl + w w` - Switch between windows
+
+- `Ctrl + w q` - Quit a window
+
+
+
+## Advanced Commands
+
+
+
+- `.` - Repeat last change
+
+- `ci(` - Change inside parentheses
+
+- `ci"` - Change inside double quotes
+
+- `cit` - Change inside HTML/XML tag
+
+- `f{char}` - Move to next occurrence of character
+
+- `t{char}` - Move to just before next occurrence of character
+
+- `*` - Search for word under cursor
+
+- `%` - Move to matching parenthesis/bracket
+
+- `:g/pattern/command` - Execute command on lines matching pattern
+
+
+
+## Opening Files
+
+
+
+- `vim filename` - Open file in Vim
+
+- `vim +n filename` - Open file and go to line n
+
+- `vim +/pattern filename` - Open file and go to first occurrence of pattern
+
+- `vim -R filename` - Open file in read-only mode
+
+
+
+## Macros
+
+
+
+- `q{register}` - Start recording a macro into register
+
+- `q` - Stop recording macro
+
+- `@{register}` - Execute macro
+
+
+

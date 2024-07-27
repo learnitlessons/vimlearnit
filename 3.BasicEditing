@@ -1,0 +1,63 @@
+# Understanding Mode
+1. Normal Mode
+2. Insert Mode (press i - to enter, press ESC - to exit)
+
+# Basic Cursor Movements
+h: Move left
+j: Move down
+k: Move up
+l: Move right
+
+# Using Numeric Multipliers
+5j: Move 5 lines down
+5k: Move 5 line up
+
+# Word and Paragraph Navigation
+To move forward one word, press w
+To move backward one word, press b
+To move to the beginning of the next paragraph, press }
+To move to the begining of the previous paragraph, press }
+To move to the head of the window, press Shift+L
+To move to the middle of the window, press Shift+L
+To move to the bottom of the window, press Shift+L
+To move to the beginning of the line, press 0
+To move to the end of the line, press $
+To move to the begining of the file press gg 
+To move to the end of the file press G
+
+# Searching fo Text
+To search for a word, simply type / followed by the word you want to find.
+For example, /wordtofind. Press n to go to the next occurrence. Press N to go to the previous occurrence.
+
+:nohlsearch: will remove highlighting from the current serch
+
+# Exiting Vim
+:wq - to save and exit
+:w - save
+:q - exit
+:q! - exit without saving
+
+# Editing in Vim
+dw: Deletes current word
+D: Deletes from the current cursor position to the end of the current line
+dG: Deletes all lines till the end of file
+O: insert text on the previous line.
+o: insert text on thenext line.
+a: appends the text after current cursor position.
+u: undo the last change
+Ctrl+r redo the last change
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

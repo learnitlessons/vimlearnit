@@ -1,0 +1,4 @@
+# Web Server Configuration
+port: 80
+workers: 4
+log_level: debug
